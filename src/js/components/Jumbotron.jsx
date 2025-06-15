@@ -3,6 +3,9 @@ import React from 'react';
 const Jumbotron = () => {
   return (
     <div className="hero-wrapper">
+      {/* Fondo con imagen de portada */}
+      <div className="background-image" />
+
       {/* Fondo decorativo con partículas suaves */}
       <div className="particles">
         {[...Array(12)].map((_, i) => (
@@ -18,9 +21,9 @@ const Jumbotron = () => {
             Combinamos experiencia topográfica con drones, GNSS y sistemas geoespaciales para ofrecer datos confiables,
             planos detallados y soluciones geotécnicas precisas para tus proyectos.
           </p>
-          <button className="cta-button">
-            Contáctanos
-          </button>
+          <a href="https://wa.link/hf4gzn" target="_blank" rel="noopener noreferrer">
+            <button className="cta-button">Contáctanos</button>
+          </a>
         </div>
       </div>
 
@@ -28,12 +31,24 @@ const Jumbotron = () => {
       <style>{`
         .hero-wrapper {
           position: relative;
-          min-height: 90vh;
+          min-height: 65vh;
           display: flex;
           align-items: center;
           justify-content: center;
           background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
           overflow: hidden;
+        }
+
+        .background-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url('/src/img/foto de portada.jpg') no-repeat center center;
+          background-size: cover;
+          opacity: 0.25;
+          z-index: 0;
         }
 
         .particles {
@@ -76,25 +91,25 @@ const Jumbotron = () => {
         }
 
         .glass-card {
-          background: rgba(255, 255, 255, 0.05);
+          background: rgba(255, 255, 255, 0.08);
           border: 1px solid rgba(255, 255, 255, 0.15);
           border-radius: 20px;
-          padding: 3rem;
+          padding: 2.5rem;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
           color: white;
         }
 
         .title {
-          font-size: 2.8rem;
+          font-size: 2.6rem;
           font-weight: 700;
           margin-bottom: 1rem;
           letter-spacing: 1px;
         }
 
         .description {
-          font-size: 1.25rem;
+          font-size: 1.15rem;
           line-height: 1.6;
           margin-bottom: 2rem;
         }
