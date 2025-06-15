@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '/src/img/logo para navbar blanco.png';
+import logo from '/public/img/logo para navbar blanco.png';
 
 const Navbar = () => {
   return (

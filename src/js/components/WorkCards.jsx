@@ -6,28 +6,28 @@ const WorkCards = () => {
   // Ejemplo de datos para las tarjetas (solo imágenes)
   const works = [
     {
-      image: '/src/img/trabajo.jpg',
+      image: '/img/trabajo.jpg',
     },
     {
-      image: '/src/img/trabajo1.jpg',
+      image: '/img/trabajo1.jpg',
     },
     {
-      image: '/src/img/trabajo2.jpg',
+      image: '/img/trabajo2.jpg',
     },
     {
-      image: '/src/img/trabajo3.jpg',
+      image: '/img/trabajo3.jpg',
     },
     {
-      image: '/src/img/trabajo4.jpg',
+      image: '/img/trabajo4.jpg',
     },
     {
-      image: '/src/img/trabajo5.jpg',
+      image: '/img/trabajo5.jpg',
     },
     {
-      image: '/src/img/trabajo6.jpg',
+      image: '/img/trabajo6.jpg',
     },
     {
-      image: '/src/img/trabajo7.jpg',
+      image: '/img/trabajo7.jpg',
     },
   ];
 
