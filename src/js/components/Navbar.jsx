@@ -9,8 +9,8 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo Droning Mapping"
-            width="200"
-            height="100"
+            width="120"
+            height="80"
             className="d-inline-block align-text-top me-2"
             style={{ borderRadius: '4px' }}
           />
@@ -50,11 +50,14 @@ const Navbar = () => {
       <style>{`
         .navbar-custom {
           background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+          height: 70px;
+          min-height: 70px;
         }
 
         .nav-link {
           font-weight: 500;
           transition: color 0.3s;
+          padding: 0.25rem 1rem !important;
         }
 
         .nav-link:hover {
@@ -64,10 +67,23 @@ const Navbar = () => {
         .btn-success {
           background-color: #25D366;
           border: none;
+          padding: 0.375rem 1rem !important;
         }
 
         .btn-success:hover {
           background-color: #1ebe5d;
+        }
+
+        .navbar-brand {
+          padding: 0 !important;
+          height: 100%;
+          display: flex !important;
+          align-items: center !important;
+        }
+
+        .container-fluid {
+          height: 100%;
+          align-items: center;
         }
       `}</style>
     </nav>
