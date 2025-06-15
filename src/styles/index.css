@@ -9,3 +9,7 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
