@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '/public/img/logo para navbar blanco.png';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -34,12 +35,12 @@ const Navbar = () => {
             <a className="nav-link text-white" href="#servicios">
               Servicios
             </a>
+            {/* Cambiado href para que vaya a la sección de contacto */}
             <a
-              className="nav-link btn btn-success text-white px-3 ms-3 shadow-sm"
-              href="https://wa.link/hf4gzn"
-              target="_blank"
-              rel="noopener noreferrer"
+              className="nav-link btn btn-success text-white px-3 ms-3 shadow-sm d-flex align-items-center gap-2 whatsapp-button"
+              href="#contacto"
             >
+              <FaWhatsapp size={18} />
               WhatsApp
             </a>
           </div>
@@ -68,10 +69,21 @@ const Navbar = () => {
           background-color: #25D366;
           border: none;
           padding: 0.375rem 1rem !important;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .btn-success:hover {
           background-color: #1ebe5d;
+          transform: scale(1.05);
+          box-shadow: 0 0 10px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-button svg {
+          transition: transform 0.3s ease;
+        }
+
+        .whatsapp-button:hover svg {
+          transform: rotate(10deg) scale(1.1);
         }
 
         .navbar-brand {
